@@ -5,14 +5,19 @@
     <vendor>jsw6701</vendor>
 
     <depends>com.intellij.modules.platform</depends>
+    <depends>org.jetbrains.kotlin</depends>
 
     <resource-bundle>messages.MyBundle</resource-bundle>
 
-    <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="com.github.jsw6701.devplugin.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
-    </extensions>
+    <actions>
+        <action
+                id="GenerateDtoAction"
+                class="com.github.jsw6701.devplugin.GenerateDtoAction"
+                text="Generate DTO"
+                description="Generate a DTO class from the Entity"
 
-    <applicationListeners>
-        <listener class="com.github.jsw6701.devplugin.listeners.MyApplicationActivationListener" topic="com.intellij.openapi.application.ApplicationActivationListener"/>
-    </applicationListeners>
+                >
+            <add-to-group group-id="ProjectViewPopupMenu" anchor="first"/>
+        </action>
+    </actions>
 </idea-plugin>
