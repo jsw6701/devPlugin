@@ -1,37 +1,23 @@
 # Entity to DTO Converter
 
-![Build](https://github.com/jsw6701/devPlugin/workflows/Build/badge.svg)
-[![Version](https://img.shields.io/jetbrains/plugin/v/MARKETPLACE_ID.svg)](https://plugins.jetbrains.com/plugin/MARKETPLACE_ID)
-[![Downloads](https://img.shields.io/jetbrains/plugin/d/MARKETPLACE_ID.svg)](https://plugins.jetbrains.com/plugin/MARKETPLACE_ID)
-
-## Template ToDo list
-- [x] Create a new [IntelliJ Platform Plugin Template][template] project.
-- [ ] Get familiar with the [template documentation][template].
-- [ ] Adjust the [pluginGroup](./gradle.properties) and [pluginName](./gradle.properties), as well as the [id](./src/main/resources/META-INF/plugin.xml) and [sources package](./src/main/kotlin).
-- [ ] Adjust the plugin description in `README` (see [Tips][docs:plugin-description])
-- [ ] Review the [Legal Agreements](https://plugins.jetbrains.com/docs/marketplace/legal-agreements.html?from=IJPluginTemplate).
-- [ ] [Publish a plugin manually](https://plugins.jetbrains.com/docs/intellij/publishing-plugin.html?from=IJPluginTemplate) for the first time.
-- [ ] Set the `MARKETPLACE_ID` in the above README badges. You can obtain it once the plugin is published to JetBrains Marketplace.
-- [ ] Set the [Plugin Signing](https://plugins.jetbrains.com/docs/intellij/plugin-signing.html?from=IJPluginTemplate) related [secrets](https://github.com/JetBrains/intellij-platform-plugin-template#environment-variables).
-- [ ] Set the [Deployment Token](https://plugins.jetbrains.com/docs/marketplace/plugin-upload.html?from=IJPluginTemplate).
-- [ ] Click the <kbd>Watch</kbd> button on the top of the [IntelliJ Platform Plugin Template][template] to be notified about releases containing new features and fixes.
-
 <!-- Plugin description -->
 
-Entity 클래스에 오른쪽 클릭 후 'Generate DTO'를 선택하거나, DTO 클래스에 오른쪽 클릭 후 'Generate Conversion Methods'를 선택하면 DTO 클래스와 변환 메서드가 자동으로 생성됩니다.
-현재는 DTO 클래스 이름에 Dto가 붙어있어야 인식하도록 했습니다. Entity 클래스는 @Entity 어노테이션이 붙어있어야 인식하도록 했습니다.
 
-1. Entity 클래스에 오른쪽 클릭 후 'Generate DTO'를 선택하면 DTO 클래스가 생성됩니다.
+When right-clicking an Entity class and selecting 'Generate DTO', a DTO class is automatically generated.  
+Currently, the plugin recognizes DTO classes if their names include 'Dto' and identifies Entity classes by the @Entity annotation.  
 
-![1.png](https://raw.githubusercontent.com/jsw6701/devPlugin/main/src/main/resources/img/1.png)
+1. After selecting 'Generate DTO' from the context menu on an Entity class, the corresponding DTO class is created.  
 
-![2.png](https://raw.githubusercontent.com/jsw6701/devPlugin/main/src/main/resources/img/2.png)
+![1.png](https://raw.githubusercontent.com/jsw6701/devPlugin/main/src/main/resources/img/1.png)  
 
-2. DTO 클래스에 오른쪽 클릭 후 'Generate Conversion Methods'를 선택하면 Entity 클래스를 DTO 클래스로 변환하는 메서드가 생성됩니다.
+![2.png](https://raw.githubusercontent.com/jsw6701/devPlugin/main/src/main/resources/img/2.png)  
 
-![3.png](https://raw.githubusercontent.com/jsw6701/devPlugin/main/src/main/resources/img/3.png)
+2. After selecting 'Generate Conversion Methods' from the context menu on a DTO class, methods to convert the Entity to the DTO and vice versa are generated.  
 
-![4.png](https://raw.githubusercontent.com/jsw6701/devPlugin/main/src/main/resources/img/4.png)
+![3.png](https://raw.githubusercontent.com/jsw6701/devPlugin/main/src/main/resources/img/3.png)  
+
+![4.png](https://raw.githubusercontent.com/jsw6701/devPlugin/main/src/main/resources/img/4.png)  
+
 
 <!-- Plugin description end -->
 
@@ -39,7 +25,7 @@ Entity 클래스에 오른쪽 클릭 후 'Generate DTO'를 선택하거나, DTO 
 
 - Using the IDE built-in plugin system:
   
-  <kbd>Settings/Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>Marketplace</kbd> > <kbd>Search for "devPlugin"</kbd> >
+  <kbd>Settings/Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>Marketplace</kbd> > <kbd>Search for "Entity to DTO Converter"</kbd> >
   <kbd>Install</kbd>
   
 - Using JetBrains Marketplace:
