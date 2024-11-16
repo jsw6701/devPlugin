@@ -23,15 +23,15 @@ Entity 클래스에 오른쪽 클릭 후 'Generate DTO'를 선택하거나, DTO 
 
 1. Entity 클래스에 오른쪽 클릭 후 'Generate DTO'를 선택하면 DTO 클래스가 생성됩니다.
 
-![1.png](src/main/resources/img/1.png)
+![1.png](https://raw.githubusercontent.com/jsw6701/devPlugin/main/src/main/resources/img/1.png)
 
-![2.png](src/main/resources/img/2.png)
+![2.png](https://raw.githubusercontent.com/jsw6701/devPlugin/main/src/main/resources/img/2.png)
 
 2. DTO 클래스에 오른쪽 클릭 후 'Generate Conversion Methods'를 선택하면 Entity 클래스를 DTO 클래스로 변환하는 메서드가 생성됩니다.
 
-![3.png](src/main/resources/img/3.png)
+![3.png](https://raw.githubusercontent.com/jsw6701/devPlugin/main/src/main/resources/img/3.png)
 
-![4.png](src/main/resources/img/4.png)
+![4.png](https://raw.githubusercontent.com/jsw6701/devPlugin/main/src/main/resources/img/4.png)
 
 <!-- Plugin description end -->
 
