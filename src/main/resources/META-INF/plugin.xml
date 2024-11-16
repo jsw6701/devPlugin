@@ -2,30 +2,23 @@
 <idea-plugin>
     <id>com.github.jsw6701.devplugin</id>
     <name>Entity to DTO Converter</name>
-    <vendor email="anes53027@gmail.com">Jung SeungWoo</vendor>
+    <vendor email="anes53027@gmail.com">Jung Seung Woo</vendor>
     <version>1.1</version>
 
     <depends>com.intellij.modules.platform</depends>
 
     <resource-bundle>messages.MyBundle</resource-bundle>
 
-    <!-- 플러그인 설명 추가 -->
     <description>
-
-        Entity 클래스에 오른쪽 클릭 후 'Generate DTO'를 선택하거나, DTO 클래스에 오른쪽 클릭 후 'Generate Conversion Methods'를 선택하면 DTO 클래스와 변환 메서드가 자동으로 생성됩니다.
-        현재는 DTO 클래스 이름에 Dto가 붙어있어야 인식하도록 했습니다. Entity 클래스는 @Entity 어노테이션이 붙어있어야 인식하도록 했습니다.
-
+        A plugin to convert Entity classes to DTOs and generate conversion methods automatically.
     </description>
-
 
     <actions>
         <action
                 id="GenerateDtoAction"
                 class="com.github.jsw6701.devplugin.GenerateDtoAction"
                 text="Generate DTO"
-                description="Generate a DTO class from the Entity"
-
-                >
+                description="Generate a DTO class from the Entity">
             <add-to-group group-id="ProjectViewPopupMenu" anchor="first"/>
         </action>
     </actions>
