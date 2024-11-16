@@ -1,13 +1,27 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
     <id>com.github.jsw6701.devplugin</id>
-    <name>devPlugin</name>
-    <vendor>jsw6701</vendor>
+    <name>Entity to DTO Converter</name>
+    <vendor email="anes53027@gmail.com">Jung SeungWoo</vendor>
+    <version>1.1</version>
 
     <depends>com.intellij.modules.platform</depends>
-    <depends>org.jetbrains.kotlin</depends>
 
     <resource-bundle>messages.MyBundle</resource-bundle>
+
+    <!-- 플러그인 설명 추가 -->
+    <description>
+        This plugin helps developers automatically generate Data Transfer Object (DTO) classes from Entity classes, as well as conversion methods such as 'from' and 'toEntity'.
+        It simplifies the process of creating and managing DTOs in your Java projects.
+
+        To use this plugin, right-click on an Entity class in the Project view and select 'Generate DTO'
+        or right-click on a DTO class and select 'Generate Conversion Methods'.
+
+        Entity 클래스에 오른쪽 클릭 후 'Generate DTO'를 선택하거나, DTO 클래스에 오른쪽 클릭 후 'Generate Conversion Methods'를 선택하면 DTO 클래스와 변환 메서드가 자동으로 생성됩니다.
+        현재는 DTO 클래스 이름에 Dto가 붙어있어야 인식하도록 했습니다. Entity 클래스는 @Entity 어노테이션이 붙어있어야 인식하도록 했습니다.
+
+    </description>
+
 
     <actions>
         <action
@@ -17,6 +31,16 @@
                 description="Generate a DTO class from the Entity"
 
                 >
+            <add-to-group group-id="ProjectViewPopupMenu" anchor="first"/>
+        </action>
+    </actions>
+
+    <actions>
+        <action
+                id="GenerateDtoConversionAction"
+                class="com.github.jsw6701.devplugin.GenerateDtoConversionAction"
+                text="Generate Conversion Methods"
+                description="Generate 'from' and 'toEntity' conversion methods for the DTO class">
             <add-to-group group-id="ProjectViewPopupMenu" anchor="first"/>
         </action>
     </actions>
