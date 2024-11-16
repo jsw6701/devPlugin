@@ -17,14 +17,21 @@
 - [ ] Click the <kbd>Watch</kbd> button on the top of the [IntelliJ Platform Plugin Template][template] to be notified about releases containing new features and fixes.
 
 <!-- Plugin description -->
-This plugin helps developers automatically generate Data Transfer Object (DTO) classes from Entity classes, as well as conversion methods such as 'from' and 'toEntity'.
-It simplifies the process of creating and managing DTOs in your Java projects.
-
-To use this plugin, right-click on an Entity class in the Project view and select 'Generate DTO'
-or right-click on a DTO class and select 'Generate Conversion Methods'.
 
 Entity 클래스에 오른쪽 클릭 후 'Generate DTO'를 선택하거나, DTO 클래스에 오른쪽 클릭 후 'Generate Conversion Methods'를 선택하면 DTO 클래스와 변환 메서드가 자동으로 생성됩니다.
 현재는 DTO 클래스 이름에 Dto가 붙어있어야 인식하도록 했습니다. Entity 클래스는 @Entity 어노테이션이 붙어있어야 인식하도록 했습니다.
+
+1. Entity 클래스에 오른쪽 클릭 후 'Generate DTO'를 선택하면 DTO 클래스가 생성됩니다.
+
+![1.png](src/main/resources/img/1.png)
+
+![2.png](src/main/resources/img/2.png)
+
+2. DTO 클래스에 오른쪽 클릭 후 'Generate Conversion Methods'를 선택하면 Entity 클래스를 DTO 클래스로 변환하는 메서드가 생성됩니다.
+
+![3.png](src/main/resources/img/3.png)
+
+![4.png](src/main/resources/img/4.png)
 
 <!-- Plugin description end -->
 
